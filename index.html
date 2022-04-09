@@ -1,0 +1,236 @@
+<!--html: 5-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricomida</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+
+    <!-- hoja de estilos propios -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body> <!--dentro del body tenemos toda la estructura de etiquetas a interpretar por el navegador-->
+
+    <!-- navbar o barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gris">
+        <div class="container px-5">
+            <a class="navbar-brand nav-titulo" href="#">Ricomida</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link text-light" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link text-light" href="#">Recetas</a>
+                    <a class="nav-link text-light" href="#">Nosotros</a>
+                    <a class="nav-link text-light" href="#">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- etiquetas semanticas nav header section article figcaption footer -->
+
+    <!-- mt-, me-, mb-, ms-, my-, mx-, m-, 0-1-2-3-4-5-auto -->
+    <!-- mt-, pe-, pb-, ps-, py-, px-, p-, 0-1-2-3-4-5-auto -->
+    <header class="container my-3 pt-4 mx-auto px-5">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <img class="img-fluid" src="./assets/img/principal.jpg" alt="pizza">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 info-header">
+                <div class="pt-5 pb-3">
+                    <h1 class="fw-bold text-uppercase">Pizza al estilo chicago con espinacas y champiñones</h1>
+                </div>
+                <div class="border-top border-dark ">
+                    <h5 class="py-3">110 MIN / 6 A 8 PORCIONES</h5>
+                    <div class="pb-4">
+                        <button id="enviarCorreo" type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar a tu correo">Enviar por correo</button>
+                        <button  type="button" class="btn btn-outline-secondary ms-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- carrousel de imagenes -->
+    <section class="container my-5 py-3 px-5 d-none d-md-block">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner text-dark">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-xl-3">
+                            <img src="./assets/img/slider-1.png" class="img-fluid" alt="slider-1">
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3">
+                            <img src="./assets/img/slider-2.png" class="img-fluid" alt="slider-2">
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3">
+                            <img src="./assets/img/slider-3.png" class="img-fluid" alt="slider-3">
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3">
+                            <img src="./assets/img/slider-4.png" class="img-fluid" alt="slider-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item text-dark">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-xl-3">
+                            <img src="./assets/img/slider-5.png" class="img-fluid" alt="slider-5">
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3">
+                            <img src="./assets/img/slider-6.png" class="img-fluid" alt="slider-6">
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3">
+                            <img src="./assets/img/slider-7.png" class="img-fluid" alt="slider-7">
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3">
+                            <img src="./assets/img/slider-8.png" class="img-fluid" alt="slider-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ingredientes - preparación -->
+    <section class="container px-5">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pb-3">
+                <div class="pb-3">
+                    <h5 class="d-inline-block pb-2 border-bottom border-dark border-2 shadow-sm">INGREDIENTES</h5>
+                </div>
+                
+                <p>Masa</p>
+                <ul>
+                    <li>20 gr de levadura seca instantanea</li>
+                    <li>1 cucharadita de azúcar</li>
+                    <li>500 ml de agua tiba</li>
+                    <li>100 ml aceite vegetal</li>
+                    <li>4 cucharaditas de acete de oliva</li>
+                    <li>65 gr de harina de maíz fína (chuchoca)</li>
+                    <li>2 cucharaditas de sal</li>
+                    <li>625 gr de harina</li>
+                </ul>
+                <p>Salsa</p>
+                <ul>   
+                    <li>5 cucharadas de aceite de oliva</li>
+                    <li>1/2 cebolla picada en cubos finos</li>
+                    <li>2 cucharaditas de sal</li>
+                    <li>3 cucharadas de Orégano Gourmet</li>
+                    <li>1 1/2 cucharadas de Albahaca Gourmet</li>
+                    <li>2 tarro de tomates en cubos al natural</li>
+                    <li>2 cucharaditas de azúcar</li>
+                </ul>
+                <p>Relleno</p>
+                <ul>
+                    <li>½ cebolla, en cubos</li>
+                    <li>500 gr hojas de espinacas picadas</li>
+                    <li>400 gr de champiñones, laminados</li>
+                    <li>300 gr de queso mozarella.</li>
+                    <li>4 cucharadas queso parmesano</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="pb-5">
+                    <h5 class="d-inline-block pb-2 border-bottom border-dark border-2 shadow-sm">PREPARACIÓN</h5>
+                </div>
+                
+                <p>1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina, la cantidad necesaria para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue) . Poner la masa en un bol aceitado, tapar con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales.</p>
+
+                <p>2. Mientras tanto preparar la salsa: Calentar 4 cucharadas deaceite en una olla a fuego medio. Agregar la cebolla, OréganoGourmet, Albahaca Gourmet, sal y cocinar hasta que la cebolla estédorada. Agregar el ajo y cocinar por 30 segundos. Agregar los tomatesjunto al jugo del tarro, a la mezcla de cebolla. Agregar el azúcar ycocinar hasta que la mezcla se haya reducido y espesado, como 30minutos. Sazonar con sal y pimienta a gusto. Reservar.</p>
+
+                <p>3. Relleno: Cocinar las chalotas en el aceite de oliva hasta queestén transparentes. Agregar los champiñones y las espinacas, cocinarhasta que estén cocidos y se haya evaporado todo el líquido que hayanvotado los vegetales. Reservar.</p>
+
+                <p>4. Calentar el horno a 220C.</p>
+
+                <p>5. Una vez que la masa haya reposado, dividirla en dos bolas.Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm,hacer un borde de 5 cm con la masa. Dividir el relleno entre las dospizza, tapar con el queso mozarella, luego terminar con la salsa detomates y finalmente espolvorear el queso rallado.</p>
+
+                <p>6. Hornear por 35 a 40 minutos o hasta que el relleno estécaliente y la base esté esponjosa y dorada. Esperar unos minutosantes de desmoldar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- cards o cartas -->
+    <section class="container py-3 my-3 px-5">
+        <div class="border-top border-dark">
+            <h4 class="text-center fw-bold my-4 display-5 pb-4">RECETAS RELACIONADAS</h4>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/recipe-card-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-uppercase">Panqueques con manjar y crema</h4>
+                            <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/recipe-card-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-uppercase">Tiramisú</h4>
+                            <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/recipe-card-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-uppercase">Plateada</h4>
+                            <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- newsletter -->
+    <section class="container-fluid bg-danger text-center py-5 text-light">
+        <div class="container py-5">
+            <div class="pt-5 pb-4">
+                <h2 class="fw-bold text-uppercase pb-3 display-6">Suscribete a nuestro newsletter</h2>
+                <h3>y obtén las mejores recetas que tenemos en <span class="fuente-lobster">Ricomida</span> </h3>
+            </div>
+            <div class="pb-5">
+                <button type="button" class="btn btn-outline-light botonnews">Empezar</button>
+            </div>
+        </div> 
+    </section>
+
+
+    <!-- pie de pagina -->
+    <footer class="container-fluid bg-gris py-4">
+        <p class="fuente-lobster text-light text-center">Ricomida</p>
+    </footer>
+
+
+    <!-- popper bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
